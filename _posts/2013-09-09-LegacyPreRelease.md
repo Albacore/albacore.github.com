@@ -14,6 +14,10 @@ not to load. You need to install this version to work around that.
 
 `> gem install albacore --pre`
 
+or, in your Gemfile
+
+`gem "albacore", "~> 1.0.rc"`
+
 We've been sitting on a handful of new features and other fixes
 
  * Added the `tag` parameter to the FluentMigrator task
