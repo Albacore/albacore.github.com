@@ -12,7 +12,7 @@ and patches, more on that process later, as well).
 Right now, Albacore has a nasty Rubyzip dependency bug that will cause Albacore
 not to load. You need to install this version to work around that.
 
-`> gem install albacore --pre`
+`> gem install albacore --version '~> 1.0.rc'`
 
 or, in your Gemfile
 
