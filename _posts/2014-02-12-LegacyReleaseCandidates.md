@@ -41,12 +41,14 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
 
  * Quoted all paths and values that might have spaces (this is internal and will only be visible when `verbose` logging)
  
-   ```bash
-   $ running command "foo.exe" -param1 path/to/foo with spaces
+   ```
+   $ rake foo 
+   running command "foo.exe" -param1 path/to/foo with spaces
    ```
    
-   ```bash
-   $ running command "foo.exe" -param1 "path/to/foo with spaces"
+   ```
+   $ rake foo
+   running command "foo.exe" -param1 "path/to/foo with spaces"
    ```
 
 ## Breaking Changes
