@@ -55,16 +55,16 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
 
 ### aspnetcompiler
 
- * replaced the `clean`, `debug`, `delay_sign`, `fixed_names`, `force`, & `updateable`  properties with exactly named methods
+ * replaced the `clean`, `debug`, `delay_sign`, `fixed_names`, `force`, & `updateable`  properties with methods of the same name
 
 ### assemblyinfo
 
- * replaced the `com_visible` property with an exactly named method
+ * replaced the `com_visible` property with a method of the same name
  * removed the `use` method that allowed setting both `input_file` & `output_file` at the same time, use an assignment like `input_file = output_file = foo`
 
 ### csc
 
- * replaced the `debug` & `optimize` properties with exactly named methods
+ * replaced the `debug` & `optimize` properties with methods of the same name
  * replaced the `delaysign` property with the method `delay_sign`
  * renamed the `keycontainer` and `keyfile` properties to use underscores: `key_container` & `key_file`
  * renamed the `output` property to `out` to match the CLI reference
@@ -76,7 +76,7 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
 ### fluentmigrator
 
  * removed the `show_help` method, use `$ fluentm.exe /?` on the command line
- * replaced the `output`, `verbose`, & `preview` properties with exactly named methods
+ * replaced the `output`, `verbose`, & `preview` properties with methods of the same name
  * renamed the `output` & `output_filename` properties to `out` & `output_path` to match the CLI reference
 
 ### ilmerge
@@ -143,7 +143,7 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
 
 ### plink
 
- * replaced the `verbose` property with an exactly named method
+ * replaced the `verbose` property with a method of the same name
  
 ### specflow
 
@@ -152,7 +152,7 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
  
 ### sqlcmd
 
- * replaced the `trusted_connection` & `batch_abort` properties with exactly named methods
+ * replaced the `trusted_connection` & `batch_abort` properties with methods of the same name
  * set `trusted_connection` & `batch_abort` off by default, the user must explicitly require them
  * removed the automatic resolution of an installed sqlcmd command, you must provide it yourself or put it on the `PATH`
 
