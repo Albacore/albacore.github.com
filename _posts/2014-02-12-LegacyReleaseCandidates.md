@@ -167,7 +167,7 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
 ### xunit
 
  * this task now only runs on one `assembly` at a time (like the real CLI app), removed the `assemblies` property and `skip_test_failures` method
- * replaced the `html_output` property with a general `results_path` hash property that supports `:html` and `:xml` (like, `results_path = {:xml => path/to/xml/output}`)
+ * replaced the `html_output` property with a general `results_path` hash property that supports `:html` and `:xml` (like, `results_path = {:xml => "path/to/xml/output"}`)
  * removed the `options` property, use the general `parameters` property instead
 
 ### zip
