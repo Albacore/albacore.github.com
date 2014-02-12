@@ -64,7 +64,8 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
 
  * replaced the `debug` & `optimize` properties with exactly named methods
  * replaced the `delaysign` property with the method `delay_sign`
- * renamed `keycontainer` and `keyfile` properties to use underscores: `key_container` & `key_file`
+ * renamed the `keycontainer` and `keyfile` properties to use underscores: `key_container` & `key_file`
+ * renamed the `output` property to `out` to match the CLI reference
 
 ### docu
 
@@ -74,11 +75,14 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
 
  * removed the `show_help` method, use `$ fluentm.exe /?` on the command line
  * replaced the `output`, `verbose`, & `preview` properties with exactly named methods
+ * renamed the `output` & `output_filename` properties to `out` & `output_path` to match the CLI reference
 
 ### ilmerge
 
  * removed the `resolver` property for resolving the installed command path 
  * added the `assemblies` array property instead of using the general `parameters` property (use `assemblies = ["foo", "bar"]` instead of `parameters = ["foo", "bar"]`)
+ * renamed the `output` property to `out` to match the CLI reference
+ * removed the automatic resolution of an installed ilmerge command, you must provide it yourself or put it on the `PATH`
 
 ### msbuild
 
@@ -112,6 +116,11 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
 ### nugetpack
 
  * replaced the `symbols` property with a method of the same name
+ * renamed the `output` & `base_folder` properties to `output_directory` & `base_path` to match the CLI reference
+
+### nugetpush
+
+ * renamed the `apikey` property to `api_key`
 
 ### nunit
 
@@ -143,6 +152,7 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
 
  * replaced the `trusted_connection` & `batch_abort` properties with exactly named methods
  * set `trusted_connection` & `batch_abort` off by default, the user must explicitly require them
+ * removed the automatic resolution of an installed sqlcmd command, you must provide it yourself or put it on the `PATH`
 
 ### vssget
 
@@ -150,11 +160,8 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
 
 ### xunit
 
-(this task is still "broken", in my opinion, and will not be fixed until we accept the xunit limitation of 1 assembly per run)
-
- * renamed the `skip_test_failures` method to `continue_on_error`, which more accurately describes the use
+ * this task now only runs on one `assembly` at a time (like the real CLI app), removed the `assemblies` property and `skip_test_failures` method
  * replaced the `html_output` property with a general `output_path` hash property that supports `:html` and `:xml` (like, `output_path = {:xml => path/to/xml/output}`)
- * the `output_path` does not have to be or contain a directory path (like the old `html_output` property), output filenames are auto-incremented on multi-assembly runs
  * removed the `options` property, use the general `parameters` property instead
 
 ### zip
