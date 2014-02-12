@@ -158,7 +158,7 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
 
 ### vssget
 
- * removed the entire task... if you really need it, use `exec`, but I recommend switching source control tool :)
+ * removed the entire task... if you really need it, use `exec`, but I recommend switching to a modern source control tool :)
 
 ### xunit
 
