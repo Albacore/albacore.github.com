@@ -83,7 +83,7 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
 ### msbuild
 
  * removed infrequently used "special" switches like `max_cpu_count`, use `other_switches` instead (like `other_switches = {:max_cpu_count => 4}`)
- * removed support for "plain" switches (without values), use the general `parameters` property (like `parameters = ["/noconsolelogger"]
+ * removed support for "plain" switches (without values), use the general `parameters` property (like `parameters = ["/noconsolelogger"]`)
 
 ### msdeploy
 
