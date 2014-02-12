@@ -139,7 +139,7 @@ I hope, now, you won't have to visit [the docs][2] every time you use a task, bu
 ### output
 
  * renamed the `keep_to` property to `preserve`
- * renamed the `directories` property to `dirs` (matches the `zip` task)
+ * renamed the `directories` property to `dirs`
 
 ### plink
 
