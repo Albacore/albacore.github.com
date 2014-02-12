@@ -7,11 +7,7 @@ Release candidates 1 & 2 were discussed, indirectly, in the [pre-release announc
 
 We didn't have to make breaking changes. We could have spent a few versions introducing aliases, parallel features, and the like. Then, obsolete and remove them over time. But, we're _way_ behind and, given the state of things, it was a reasonable option. There were a lot of inconsistent styles, naming, and patterns that were causing trouble.
 
-I hope, now, you won't have to visit [the docs][2] every time you use a task, but, rather, once!
-
-## Breaking Changes
-
-You'll see the same "kinds" of breaking changes throughout, here is a summary
+I hope, now, you won't have to visit [the docs][2] every time you use a task, but, rather, once! You'll see the same "kinds" of breaking changes throughout, here is a summary
 
  * Changed boolean properties to a, usually, positively-named method (depends on defaults/language)
  
@@ -52,6 +48,8 @@ You'll see the same "kinds" of breaking changes throughout, here is a summary
    ```bash
    $ running command "foo.exe" -param1 "path/to/foo with spaces"
    ```
+
+## Breaking Changes
 
 ### aspnetcompiler
 
